@@ -1,0 +1,26 @@
+{
+  "name": "creative-os",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/canvas-confetti": "^1.9.0",
+    "svelte": "^5.57.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@lucide/svelte": "^1.47.0",
+    "@supabase/supabase-js": "^2.116.0",
+    "canvas-confetti": "^1.9.4",
+    "lucide-svelte": "^1.0.1"
+  }
+}

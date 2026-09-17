@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-office-blue: #2b579a;
+  --color-office-green: #217346;
+  --color-office-orange: #c43e1c;
+  --color-office-slate: #111827;
+  --color-office-surface: #172133;
+  --color-office-panel: #1f2937;
+  --color-office-text: #e5e7eb;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --font-sans: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Segoe UI', sans-serif;
+    --font-mono: 'Consolas', monospace;
+    background: #0f172a;
+    color: #e5e7eb;
+  }
+
+  * {
+    border-radius: 0 !important;
+  }
+
+  html {
+    background: #0f172a;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+    color: var(--color-office-text);
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .dark body {
+    background: linear-gradient(180deg, #0b1020 0%, #111827 100%);
+    color: #f3f4f6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  button, input, select, textarea {
+    font: inherit;
+  }
+}
+
+button,
+input,
+select,
+textarea,
+[role="button"],
+[draggable="true"] {
+  border-radius: 0 !important;
+}
+
+.badge-e0 { background: #f59e0b; color: #111827; border: 1px solid #f59e0b; font-weight: 700; }
+.badge-e1 { background: #e5e7eb; color: #111827; border: 1px solid #e5e7eb; font-weight: 700; }
+.badge-e2 { background: #2b579a; color: #ffffff; border: 1px solid #2b579a; font-weight: 700; }
+.badge-e3 { background: #217346; color: #ffffff; border: 1px solid #217346; font-weight: 700; }
